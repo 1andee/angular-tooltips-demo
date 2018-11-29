@@ -1,7 +1,4 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -33,9 +30,6 @@ export class AboutComponent implements OnInit {
     this.route
       .data
       .subscribe((data: any) => {
-        /**
-         * Your resolved data from route.
-         */
         this.localState = data.yourData;
       });
 

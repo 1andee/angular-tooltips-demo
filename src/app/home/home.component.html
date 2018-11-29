@@ -1,16 +1,19 @@
 <div>
-  <h1 x-large class="sample-content">Your Content Here</h1>
+    <div class="jumbotron">
+      <h1 class="display-3">Personality Style</h1>
+    </div>
 
-  <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-warning">Thinker</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger">Creator</button>
+        </div>
+      </div>
+    </div>
 
-  <div>
-    For hot module reloading run
-    <pre>npm run start:hmr</pre>
-  </div>
-
-  <hr>
-
-  <div>
     <h4>Local State</h4>
 
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
@@ -31,7 +34,5 @@
       -->
 
     <pre>this.localState = {{ localState | json }}</pre>
-
-  </div>
 
 </div>

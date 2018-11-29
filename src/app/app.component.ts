@@ -18,33 +18,6 @@ export const ROOT_SELECTOR = 'app';
     './app.component.css'
   ],
   template: `
-    <nav>
-      <a [routerLink]=" ['./'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Index
-      </a>
-      <a [routerLink]=" ['./home'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Home
-      </a>
-      <a [routerLink]=" ['./detail'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Detail
-      </a>
-      <a [routerLink]=" ['./barrel'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Barrel
-      </a>
-      <a [routerLink]=" ['./about'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        About
-      </a>
-      <a *ngIf="showDevModule" [routerLink]=" ['./dev-module'] "
-         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        DevModule
-      </a>
-    </nav>
-
     <main>
       <router-outlet></router-outlet>
     </main>
@@ -53,11 +26,6 @@ export const ROOT_SELECTOR = 'app';
 
     <footer>
       <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="tipe" width="25%">
-        </a>
-      </div>
     </footer>
   `
 })
