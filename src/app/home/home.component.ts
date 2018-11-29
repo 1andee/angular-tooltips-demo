@@ -16,9 +16,7 @@ import { Title } from './title';
   /**
    * We need to tell Angular's Dependency Injection which providers are in our app.
    */
-  providers: [
-    Title
-  ],
+  providers: [],
   /**
    * Our list of styles in our component. We may add more to compose many styles together.
    */
@@ -37,15 +35,10 @@ export class HomeComponent implements OnInit {
    * TypeScript public modifiers
    */
   constructor(
-    public appState: AppState,
-    public title: Title
+    public appState: AppState
   ) {}
 
   public ngOnInit() {
-    console.log('hello `Home` component');
-    /**
-     * this.title.getData().subscribe(data => this.data = data);
-     */
   }
 
   public submitState(value: string) {
