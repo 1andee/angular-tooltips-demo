@@ -18,17 +18,6 @@ export const ROOT_SELECTOR = 'app';
     './app.component.css'
   ],
   template: `
-    <nav>
-      <a [routerLink]=" ['./about'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        About
-      </a>
-      <a *ngIf="showDevModule" [routerLink]=" ['./dev-module'] "
-         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        DevModule
-      </a>
-    </nav>
-
     <main>
       <router-outlet></router-outlet>
     </main>
