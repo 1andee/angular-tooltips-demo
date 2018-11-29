@@ -1,7 +1,21 @@
 <div>
   <h1 class="sample-content">Hello Xello</h1>
 
-  <div>
+    <div class="jumbotron">
+      <h1 class="display-3">Personality Style</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-warning">Thinker</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger">Creator</button>
+        </div>
+      </div>
+    </div>
+
     <h4>Local State</h4>
 
     <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
@@ -22,7 +36,5 @@
       -->
 
     <pre>this.localState = {{ localState | json }}</pre>
-
-  </div>
 
 </div>
