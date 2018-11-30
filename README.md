@@ -1,4 +1,4 @@
-# angular-tooltip-demo
+# angular-tooltips-demo
 
 Single page Angular 6 app with interactive tooltips! 🔎
 
