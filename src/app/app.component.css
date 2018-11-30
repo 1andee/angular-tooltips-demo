@@ -1,8 +1,24 @@
 html, body{
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgb(30, 51, 11) 0%, #8ED449 100%);
 }
 
 a.active {
   background-color: gray;
+}
+
+button {
+  color: #FFF;
+  opacity: 0.9;
+  background-color: #5b7e2f;
+  padding: 8px 24px!important; /* override bootstrap */
+  border-radius: 30px!important; /* override bootstrap */
+}
+
+button:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-out;
 }
