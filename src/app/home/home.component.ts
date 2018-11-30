@@ -8,22 +8,12 @@ import { AppState } from '../app.service';
   templateUrl: './home.component.html'
 })
 
-export class HomeComponent implements OnInit {
-  public localState = { value: '' };
+export class HomeComponent {
   thinkerContent: string;
   creatorContent: string;
 
   constructor(public appState: AppState) {
-    this.thinkerContent = `The Thinker values analyzing ideas down to its very inception; driven by the desire to understand.`;
-    this.creatorContent = `Friends will describe the creator as complicated, open, and idealistic.`;
-  }
-
-  public ngOnInit() {
-  }
-
-  public submitState(value: string) {
-    console.log('submitState', value);
-    this.appState.set('value', value);
-    this.localState.value = '';
+    this.thinkerContent = `The Thinker values analyzing ideas down to its very inception; driven by the desire to understand`;
+    this.creatorContent = `Friends will describe the Creator as complicated, open, and idealistic.`;
   }
 }

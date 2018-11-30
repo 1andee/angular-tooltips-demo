@@ -2,13 +2,18 @@
     <div class="jumbotron">
       <h1 class="display-3">Personality Style</h1>
     </div>
+    
+    <img class="svg-art" role="img" aria-label="Drawing of a male walking in a park listening to music" src="assets/img/walk.svg" />
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <span class="sr-only">
+          The below toggletips contain descriptions of each personality style
+        </span>
+        <div class="col-6 text-center">
           <tooltip-button btnLabel="Thinker" [tooltipContent]="this.thinkerContent"></tooltip-button>
         </div>
-        <div class="col">
+        <div class="col-6 text-center">
           <tooltip-button btnLabel="Creator" [tooltipContent]="this.creatorContent"></tooltip-button>
         </div>
       </div>

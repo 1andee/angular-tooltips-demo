@@ -1,4 +1,16 @@
 .jumbotron {
-    padding: 35px;
+    padding: 35px 35px 0;
     background: none;
+}
+
+.svg-art {
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+    max-width: 35%;
+    min-width: 300px;
+}
+
+.container-fluid {
+    margin-top: 20px;
 }

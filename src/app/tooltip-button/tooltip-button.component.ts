@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class TooltipButtonComponent {
   @Input('btnLabel') btnLabel: string;
-  @Input('tooltipContent') tooltipContent: string;
+  @Input('tooltipContent') parentTooltipContent: string;
 }

@@ -66,10 +66,6 @@ temp
 tmp
 webpack-cache
 
-# Doc #
-/doc/
-/documentation/
-
 # IDE #
 .idea/
 *.swp
