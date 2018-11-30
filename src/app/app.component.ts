@@ -21,12 +21,6 @@ export const ROOT_SELECTOR = 'app';
     <main>
       <router-outlet></router-outlet>
     </main>
-
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
-    <footer>
-      <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
-    </footer>
   `
 })
 export class AppComponent implements OnInit {
